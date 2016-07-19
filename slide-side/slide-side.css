@@ -1,0 +1,73 @@
+a {
+  text-decoration: none;
+}
+
+.text-container, .cta-bg-image {
+  transition: all .3s linear;
+}
+
+.text-container {
+  width: 300px;
+  height: 250px;
+  position: absolute;
+  left:-300px;
+}
+
+.cta-container:hover  .text-container {
+  left:0;
+}
+
+/*Targets the container for the rollover image CTA. General styling*/
+.cta-container {
+  overflow: hidden;
+  height:250px;
+  width: 300px;
+  position: relative;
+  border: 7px solid #ffffff;
+  background: #000000;
+}
+
+/*General styling for the title, hr, text, and button. Hides them until the container is rolled over by
+making their scale 0. Styles the color, transition animation and text alignment.*/
+.cta-title, .cta-hr, .cta-text, .cta-button {
+  color: #ffffff;
+  text-align: center;
+}
+
+/*The CTA's un-hovered state image. General styling*/
+.cta-bg-image {
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  left: 0;
+}
+
+/*When the user hovers over the cta-container, the image moves out of the display and then 'disappears'.*/
+.cta-container:hover  .cta-bg-image {
+  left: 300px;
+}
+
+/*Positioning for the cta title of the hover state.*/
+.cta-title { margin-top: 25px; }
+
+/*Styles the ctas horizontal rules width*/
+.cta-hr {  width: 80%;  }
+
+/*General styling for the text in the hover state of the cta.*/
+.cta-text {
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+/*General styling and positioning for the cta's button.*/
+.cta-button {
+  width: 100px;;
+  height: 30px;
+  border: 1px solid #ffffff;
+  margin: 30px auto 0 auto;;
+  line-height: 30px;
+}
+
+.cta-button a {
+  text-decoration: none;
+}
