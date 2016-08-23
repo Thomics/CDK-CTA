@@ -1,0 +1,76 @@
+body {
+  background: #1e1f23;
+}
+
+.rp-container {
+  background: url(https://snap-photos.s3.amazonaws.com/img-thumbs/960w/S3SO69EEV1.jpg) center / cover no-repeat;
+  height: 300px;
+  margin-left: 50px;
+  margin-top: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+}
+
+.rp-bottom {
+  background: #fff;
+  bottom: -50px;
+  height: 50px;
+  position: absolute;
+  transition: bottom .25s cubic-bezier(0, 0.95, 1, 1);
+  width: 100%;
+}
+
+.rp-container:hover .rp-bottom {
+  bottom: 0;
+}
+
+.rp-bottom-icons {
+  color: #555;
+  float: left;
+  font-size: 18px;
+  line-height: 50px;
+  margin-left: 20px;
+  margin-top: 40px;
+  vertical-align: middle;
+}
+
+.rp-text {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 5px;
+  transition: margin-top .2s ease-in;
+  -webkit-transition-delay: .07s; /* Safari */
+  transition-delay: .07s;
+}
+
+.rp-play {
+  transition: margin-top .2s cubic-bezier(0.26, 1.37, 1, 1);
+  -webkit-transition-delay: .15s; /* Safari */
+  transition-delay: .15s;
+  font-size: 18px;
+
+}
+
+.rp-pause {
+  transition: margin-top .2s cubic-bezier(0.26, 1.37, 1, 1);
+  -webkit-transition-delay: .18s; /* Safari */
+  transition-delay: .18s;
+  font-size: 18px;
+
+}
+
+.rp-stop {
+  transition: margin-top .4s cubic-bezier(0.26, 1.37, 1, 1);
+  -webkit-transition-delay: .21s; /* Safari */
+  transition-delay: .21s;
+  font-size: 18px;
+
+}
+
+.rp-container:hover .rp-text,
+.rp-container:hover .rp-play,
+.rp-container:hover .rp-stop,
+.rp-container:hover .rp-pause {
+  margin-top: 0;
+}
